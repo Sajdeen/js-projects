@@ -13,7 +13,7 @@ block scope and functional scope
 
 */
 console.log(accountId);
-accountEmail ="sajen012@gmail.com"
+accountEmail ="sajen012@gmail.com"; //if we dont use semicolon there is no problem in code so you write code without semicolon under given example
 var accountPassword = "12345"
 accountCity = "kolkata"
 
