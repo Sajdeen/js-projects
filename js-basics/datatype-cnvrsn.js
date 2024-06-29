@@ -36,3 +36,23 @@ console.log(booleanIsLoggedIn);
   console.log(9*8);
   console.log(9/8);
 
+
+
+
+
+  //********Stack Primitive,Heap Primitive */
+
+  let myYoutubename = "sajdeen876@gmail.com"
+  let anothername = "rahman"
+console.log (myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "sajdeen876@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
