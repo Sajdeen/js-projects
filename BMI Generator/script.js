@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const form = document.querySelector('form')
 //this usecase will give you empty
 //const height = parseInt(document.querySelector('#height').value)
@@ -16,4 +17,20 @@ if (height === '' || height < 0 || is NaN(height)){
  const bmi = (weight / ((height*height)/10000)).toFixed(2)
  //show the result
  results.innerHTML =<span>${bmi}</span>
+=======
+const form = document.querySelector('form')
+//this usecase will give you empty
+//const height = parseInt(document.querySelector('#height').value)
+form.addEventListener('submit', function(e){
+    e.preventDefault()
+
+    const height = parseInt(document.querySelector('#height').value);
+    const weight = parseInt(document.querySelector('#weight').value);
+    const results = document.querySelector('#results');
+
+if (height === '' || height < 0 || is NaN(height)){
+    results.innerHTML = `Please give a valid height ${height}`;
+}
+results.innerHTML = `${height}`;
+>>>>>>> dd941e417c986df5e614e2b874a0c94df00a0dad
 });
