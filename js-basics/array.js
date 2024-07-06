@@ -45,5 +45,9 @@ console.log(myn3);
 
 
 
+//====+++array2---+++\\
+
+const marvel_heroes = ["thor","Ironman","batman"]
+const dc_heroes = ["superman", "flash", "batman"]
 
  
