@@ -52,6 +52,11 @@ const dc_heroes = ["superman", "flash", "batman"]
 
  marvel_heroes.push(dc_heroes)
 
+<<<<<<< HEAD
+ console.log(marvel_heroes);
+
+
+=======
  //console.log(marvel_heroes);
  //console.log(marvel_heroes[3][1]);
 
@@ -69,3 +74,5 @@ const dc_heroes = ["superman", "flash", "batman"]
  //const another_array = [1, 2, 3, [4, 5, 6], 6, [6, 7, [4, 5]]];
 //const real_another_array = another_array.flat(Infinity);
 //console.log(real_another_array);
+
+>>>>>>> 3c89c3803c87bb3e1d8b83e750b3a78853f6e34d
