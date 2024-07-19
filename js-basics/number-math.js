@@ -40,4 +40,3 @@ const min =10
 const max =20
 
 console.log(Math.floor(Math.random() * (max-min+1)) + min)
->>>>>>> 986dc807589747ed3ce17a1583a97717ac2ad4d0
