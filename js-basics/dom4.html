@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom4</title>
+<style>
+
+</style>
+</head>
+<body style="background-color:darkolivegreen; color: aliceblue;">
+    <ul class="lang">
+        <li>Javascript</li>
+
+    </ul>
+
+    <script>
+        function addLang(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.lang').appendChild(li)
+        }
+
+        addLang("python")
+        addLang("Java")
+
+        function addOptLang(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.lang').appendChild(li)
+        }
+        addOptLang('golang');
+        //Edit
+        document.querySelector("li:nth-child")
+        
+        </script>
+</body>
+</html>
