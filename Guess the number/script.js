@@ -18,7 +18,9 @@ let playGame = true;
 if(playGame){
     submit.addEventListener('Click', function(e){
         e.preventDefault()
-        parseInt(userInput.value)
+        const guess = parseInt(userInput.value)
+        console.log()
+       validateGuess(guess)
     })
 }
 function validateGuess(guess){
@@ -44,3 +46,25 @@ function newGame(){
     //
 }
 
+document.querySelector('body').style.background = '#347245';
+document.querySelector('h1').style.color ='blue';
+//document.querySelector('p').style.color ='orange';
+document.querySelector('p').style.cssText = 'color: orange; font-size: 30px; font-family: Arial;';
+//document.querySelector('.form').style.border ='2px solid black';border-radius='20px';
+//document.querySelector('.form').style.cssText = 'border: 2px solid black;border-radius: 20px; height:20rem;width:20rem; align-items:center;justify-content:center';
+document.querySelector('.form').style.cssText = `
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 20rem;
+    width: 20rem;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    margin:2px;
+`;
+/*document.getElementByquerySelector('label'),style.cssText =`
+color:red;
+font-size:20px;
+`*/
