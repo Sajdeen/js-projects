@@ -64,7 +64,15 @@ document.querySelector('.form').style.cssText = `
     padding:5px;
     margin:2px;
 `;
-/*document.getElementByquerySelector('label'),style.cssText =`
-color:red;
+
+document.querySelector('#subt').style.cssText =`
+height:50px;
+border-radius:20px;
+background-color:#10ac84;
+color:white;
 font-size:20px;
-`*/
+font-family:sans-serif;
+margin:12px;
+
+`
+
