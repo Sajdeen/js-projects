@@ -7,8 +7,23 @@
 </head>
 <body>
 <div id="wrapper">
+    <h1>Number guessing game</h1>
+    <p>
+      You have 10 attempts to guess the right number
+    </p><br>
+    <form class="form">
+      <label for="guessfield" id="guess">Guess the number</label>
+<input type="text" id="guessfield" class="guessfield">
+<input type="submit" id="subt" value="Submit guess" class="gsubmit">
+    </form>
     
-</div>
+
+    <div class="resultParas">
+      <p>Previous Guesses: <span class="guesses"></span></p>
+      <p>Guesses Remaining: <span class="lastResult">10</span></p>
+      <p class="lowOrHi"></p>
+    </div>
+  </div>
 
   <script src="script.js"></script>  
 </body>
