@@ -61,8 +61,6 @@ document.querySelector('.form').style.cssText = `
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    padding:5px;
-    margin:2px;
 `;
 
 document.querySelector('#subt').style.cssText =`
@@ -75,4 +73,10 @@ font-family:sans-serif;
 margin:12px;
 
 `
+document.getElementById('#guess2').style.cssText=`
+padding:2px;
+margin:0;
+font-size:20px;
+font-family:sanserif;
 
+`
