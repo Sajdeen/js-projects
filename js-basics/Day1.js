@@ -27,7 +27,7 @@ console.log(typeof abc);
 
 //booln
 let boolean = true// Using let for reassignment
-let variableLet = "Initial value (let)";
+let v = "Initial value (let)";
 console.log("Before reassignment (let):", variableLet);  // Output: Before reassignment (let): Initial value (let)
 
 variableLet = "Changed value (let)";
@@ -118,7 +118,7 @@ variableLet = "Changed value (let)";
 console.log("After reassignment (let):", variableLet);   // Output: After reassignment (let): Changed value (let)
 
 // Using const for reassignment attempt (will result in an error)
-const variableConst = "Initial value (const)";
+const reassign = "Initial value (const)";
 console.log("Before reassignment (const):", variableConst);  // Output: Before reassignment (const): Initial value (const)
 
 try {

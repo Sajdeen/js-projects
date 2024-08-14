@@ -30,3 +30,27 @@ const score = 200
 const balance = 1000
 
 //if(balance > 500) console.log("test"),console.log("test2");
+
+//console.log("test2");
+
+if (balance > 500){
+    console.log("less than");
+}else if (balance < 750){
+    console.log("less than 750");
+}else if (balance < 950){
+    console.log("less than 750");
+}else{
+        console.log("less than 1200");
+    }
+  const isUserLoggedIn = true
+  const debitCard = true
+  const loggedInFromGoogle = false
+  const loggedInFromEmail = true
+
+  if(isUserLoggedIn && debitCard && 2==2){
+    console.log("Allow to buy course");
+  }
+
+  if (loggedInFromGoogle || loggedInFromEmail){
+    console.log("User logged in");
+  }
