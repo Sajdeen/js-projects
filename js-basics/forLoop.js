@@ -40,3 +40,6 @@ for(let index = 0; index < myArray.length; index++
       }
          console.log(`Value of i is ${index}`);
       }
+      let a = '4';
+      let b = 2;
+      console.log(`value is ${(-a)+(-b)+1}`);
