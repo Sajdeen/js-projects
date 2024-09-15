@@ -7,15 +7,18 @@
 </head>
 <body>
     <h2>welcome to js async tutorial with set timeout</h2>
-<button id="start">
-
-start</button>
+<button id="start">start</button>
 <button id="stop">stop</button>   
 
 <script>
-    setInterval(function(){
-        console.log("sajdeen", Date.now());
-    },2000)
+    setInterval(function () {
+        console.log("str" ,Date.now());
+    
+    })
+    setInterval(sayDate, 2000,"hi")
+
+const intervalId = setInterval(sayDate, 1000,"hi")
+    clearInterval(intervalId)
 </script>
 </body>
 </html>
