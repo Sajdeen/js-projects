@@ -4,6 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keyboard check</title>
+    <style>
+      body {
+        height: 250px;
+        margin: 20%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(data:image/jpeg;base64,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);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+}
+
+
+          
+
+        .project {
+                
+        };
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            text-align: l
+            eft;
+            border: 2px solid rgb(209, 115, 209);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid purple;
+        }
+
+        thead {
+            background-color: purple;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Zebra striping */
+        }
+
+        tbody tr:hover {
+            background-color: #e0e0e0; /* Hover effect */
+        }
+
+        .key {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: purple;
+        }
+
+        .color {
+            margin-top: 20px;
+        }
+        #insert{
+          
+                }
+    </style>
 </head>
 <body>
     <div class="project">
