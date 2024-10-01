@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black; font-size: 25px;color: aliceblue; ">
+ <table> <th>
+    <td>Value</td>
+    <td>	State</td>
+    <td>Description</td>
+  </th> 
+ <ul>
+    <li>	UNSENT	Client has been created. open() not called yet.</li>
+    	<li>OPENED	open() has been called.</li>
+    <li>HEADERS_RECEIVED	send() has been called, and headers and status are available.</li>	
+    <li>LOADING	Downloading; responseText holds partial data.</li>
+    <li>DONE	The operation is complete</li>
+	</ul>
+ 
+ 
+ </table>
+  <script>
+   const xhr = new XMLHttpRequest();
+   xhr.open('GET', 'https://api.github.com/users/sajdeen')
+  </script>
+</body>
+
+</html>
