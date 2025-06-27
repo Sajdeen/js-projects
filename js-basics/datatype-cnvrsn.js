@@ -1,5 +1,6 @@
-let score = undefined
-let age = "eight"
+let score = "33abc"
+
+//let age = "eight"
 console.log(typeof score);
 console.log (typeof (age));
 
