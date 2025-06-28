@@ -37,10 +37,15 @@ console.log(booleanIsLoggedIn);
   console.log(9*8);
   console.log(9/8);
 
+let str1 = "sajdeen"
+str2 = "rahman"
+let str3= str1 + str2
+console.log(str3);
 
-
-
-
+console.log("1"+2); //concatenation
+console.log(1 +"2");
+console.log("1"+ 2 + 2);
+ console.log(1 + 2 + "2");
   //********Stack Primitive,Heap Primitive */
 
   let myYoutubename = "sajdeen876@gmail.com"
