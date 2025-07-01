@@ -43,3 +43,20 @@ console.log(typeof isLoggedIn);
 console.log(typeof userEmail); //undefined, because userEmail is declared but not assigned a value
 console.log(typeof id); //Symbol
 console.log(typeof anotherId); //Symbol
+
+
+
+
+
+
+//+++++++++++++++++++++++++++++++++\\
+
+//stack(Primitive) vs heap(Non Primitive)
+let myYoutubename = "sajdeenramani.com"
+let anotherName = myYoutubename;
+
+
+anotherName = "rahman"
+
+console 
+console.log(anotherName);
