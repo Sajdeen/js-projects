@@ -6,11 +6,11 @@
 
  //Array Methods
 
- myArray.push(6)//push for AADDING
+ myArray.push(6)//push for ADDING
 
  myArray.push(7)
  myArray.push(8)
- myArray.pop()
+ myArray.pop()// in pop we do not need value, it will remove the last element
  console.log(myArray);
 
  //myArray.unshift(9);
