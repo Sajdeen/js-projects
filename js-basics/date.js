@@ -1,5 +1,4 @@
 // Dates
-
 let myDate = new Date();
 console.log(myDate.toString());
 console.log(myDate.toDateString());
@@ -9,7 +8,6 @@ console.log(typeof myDate);
 
 // Define myCreatedDate with corrected date format
 let myCreatedDate = new Date("07-02-2024");
-
 console.log(myCreatedDate.toLocaleString());
 
 let myTimeStamp = Date.now();
