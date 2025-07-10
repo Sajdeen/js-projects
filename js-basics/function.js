@@ -36,7 +36,7 @@ return
 //console.log(loginUserMessage("sakinas"))//when we dont pass the value it comes undefined
 
 function calculateCartPrice(val1,val2,...num1){
-   return num1
+      return num1
 }
 //console.log(calculateCartPrice(200,400,520,5222))
 
