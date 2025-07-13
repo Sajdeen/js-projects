@@ -1,5 +1,5 @@
 "use strict"; //treat all js code as newer version
-//alert (3+5);
+//alert (3+5);we are not using alert in nodejs
 
 
 console.log("sajdeen")
@@ -10,12 +10,11 @@ let isLoggedIn = false
  let state;
 
 
- //number => 2 to power 53
- //bigint
+ //BigInt
  //string => ""
  //boolean => true/false
  //null => standalone value
- //undefined => value doesnt assign in variable thtsy it comes undefined
+ //undefined => value doesn't assign in variable thtsy it comes undefined
  
  //symbol => unique
 
