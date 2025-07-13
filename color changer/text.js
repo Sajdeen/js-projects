@@ -1,32 +1,27 @@
+
 const buttons = document.querySelectorAll(".button");
-const h1 = document.querySelector(".head");
+const h1 =document.querySelector(".head");
 const body = document.querySelector("body");
 
+
+const fontcolor = {
+    grey: "pink",
+    red: "goldenrod",
+    blueviolet: "lightblue",
+    green: "white",
+    yellow: "black"
+};
+
 buttons.forEach(function(button){
-   console.log(button);
-   button.addEventListener('click', function(e){
-       console.log(e);
-       console.log(e.target);
-       if(e.target.id === 'grey','h1'){
-           body.style.backgroundColor = e.target.id;
-
-           h1.style.color = grey;
-       }
-       if(e.target.id === 'Red'){
-           body.style.backgroundColor = e.target.id;
-       }
-       if(e.target.id === 'blueviolet'){
-           body.style.backgroundColor = e.target.id;
-       }
-       if(e.target.id === 'green'){
-           body.style.backgroundColor = e.target.id;
-       }
-
-       if(e.target.id === 'yellow'){
-           body.style.backgroundColor = e.target.id;
-       }
-   })
+    button.addEventListener('click', function(e){
+    const bgColor = e.target.id.toLowerCase(); // Get the id of the clicked button
+    body.style.backgroundColor = bgColor;    
    
-});
+    if(fontcolor[bgColor] && fontcolor[bgColor] !== bgColor){
+        h1.style.color = fontcolor[bgColor];
+    }else{
+        h1.style.color = "black"; // Default color if not specified
+    }
 
-//console.log("Hello everyone!");
+});
+});
