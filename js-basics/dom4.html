@@ -9,39 +9,47 @@
 </style>
 </head>
 <body style="background-color:darkolivegreen; color: aliceblue;">
-    <ul class="lang">
+    <ul class="language">
         <li>Javascript</li>
 
     </ul>
 
     <script>
-        function addLang(langName){
-        const li = document.createElement('li');
-        li.innerHTML = `${langName}`
-        document.querySelector('.lang').appendChild(li)
-        }
+      function addLanguage(langName) {
+          const li = document.createElement('li');
+    li.innerHTML =`${langName}`
+    document.querySelector('.language').
+    appendChild(li);
+      }
+addLanguage("Python");
+addLanguage("Java");
 
-        addLang("python")
-        addLang("Java")
+function addOptiLanguage(langName) {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName));
+document.querySelector('.language').appendChild(li);
+}
+addOptiLanguage("C++");
+addOptiLanguage("C#");
 
-        function addOptLang(langName){
-            const li = document.createElement('li');
-            li.appendChild(document.createTextNode(langName))
-            document.querySelector('.lang').appendChild(li)
-        }
-        addOptLang('golang');
-        //Edit
-        document.querySelector("li:nth-child(2)")
-        //secondLang.innerHTML="Mojo"
-        const newli = document.createElement('li')
-        secondLang.replaceWith(newli)
 
-        //edit
-        const firstLang = document.querySelector("li:first-child")
-         firstLang.outerHTML = '<li>Typescript</li>'
-//Remove 
-const firstLang = document.querySelector("li:first-child")
-langName.remove()
-</script>
+//Edit
+const secndLang = document.querySelector('li:nth-child(2)')
+
+const newli = document.createElement("li")
+console.log(secndLang);
+newli.textContent = "Mojo"
+secndLang.replaceWith(newli);
+
+
+//edit
+const firstLang = document.querySelector('li:first-child')
+firstLang.outerHTML = "<li>TypeScript</li>"
+
+//remove
+const lastlang = document.querySelector("li:last-child")
+lastlang.remove();
+
+    </script>
 </body>
 </html>
