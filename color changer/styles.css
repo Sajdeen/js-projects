@@ -1,23 +1,55 @@
-*{
+/* *{
     margin: 0%;
     padding: 2%;
 box-sizing: border-box;
-}
-.box{
+} */
+.left {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
     user-select: none;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    box-shadow:2px;
-   
-    margin: auto;
-    margin-top: 50px;
-    max-width:  650px; ;
+    gap: 10px;
+    margin-left: 50rem;
+    margin-top: 2px;
+    max-width: 650px;
+    padding: 2%;
 }
-#Red{
-    height: 5rem;
+
+.button{ 
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(141, 45, 45, 0.5);
+border-radius: 20%;
+}
+#red{
+    background-color: red;
+    box-shadow: 0 0 10px rgba(141, 45, 45, 0.5);
+}
+
+#yellow{
+    background-color: yellow;
+}
+#grey{
+    background-color: gray;
+}
+#blueviolet{
+    background-color: blueviolet;
+}
+#green{
+    background-color: green;
+transition: background-color 0.5s ease;
+}
+
+/* #Red{
+    height: 1rem;
     width: 10%;
     background-color: red;
     color: aliceblue;
@@ -27,7 +59,7 @@ box-sizing: border-box;
     border: 2px solid black;
 }
 #yellow{
-    height: 5rem;
+    height: 2rem;
     width: 10%;
     background-color: yellow;
     color: aliceblue;
@@ -65,13 +97,10 @@ box-sizing: border-box;
     text-align: center;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+} */
 h1{
-    margin-top: 0%;
     text-align: center;
-   
-    align-items: center;
- font-size: 40px;
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebu
+    font-size:40px;
+    font-weight: bold;
 }

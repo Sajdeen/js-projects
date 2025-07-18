@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sajdeen's To-Do App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      transition: background 0.6s ease;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      width: 20%;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .center {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    input {
+      padding: 10px;
+      width: 60%;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    li {
+      background: rgba(255, 255, 255, 0.2);
+      margin: 5px auto;
+      padding: 10px;
+      border-radius: 5px;
+      width: 50%;
+      color: #fff;
+    }
+
+    .color-btn {
+      width: 80%;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .red { background: #e74c3c; }
+    .green { background: #27ae60; }
+    .blue { background: #3498db; }
+    .gold { background: goldenrod; }
+
+    #quote-box {
+      margin-top: 40px;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #quote-text {
+      font-style: italic;
+    }
+
+    .gradient-btn {
+      background: #8e44ad;
+      color: white;
+      margin-top: 15px;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="left">
+      <h3>🎨 Theme Colors</h3>
+      <button class="color-btn red" onclick="setSolidColor('red')">Red</button>
+      <button class="color-btn green" onclick="setSolidColor('green')">Green</button>
+      <button class="color-btn blue" onclick="setSolidColor('blue')">Blue</button>
+      <button class="color-btn gold" onclick="setSolidColor('goldenrod')">Gold</button>
+      <button class="gradient-btn" onclick="setRandomGradient()">🎲 Random Gradient</button>
+    </div>
+
+    <!-- Center Content -->
+    <div class="center">
+      <h2>📝 My To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter a task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+
+      <!-- Quote Box -->
+      <div id="quote-box">
+        <h3>✨ Quote of the Day</h3>
+        <p id="quote-text">“You don’t have to be great to start, but you have to start to be great.”</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // TO-DO FUNCTIONALITY
+    function addTask() {
+      const input = document.getElementById("taskInput");
+      const taskList = document.getElementById("taskList");
+
+      if (input.value.trim() !== "") {
+        const li = document.createElement("li");
+        li.textContent = input.value;
+        taskList.appendChild(li);
+        input.value = "";
+      }
+    }
+
+    // SOLID COLOR CHANGER
+    function setSolidColor(color) {
+      document.body.style.background = color;
+    }
+
+    // RANDOM GRADIENT
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function setRandomGradient() {
+      const c1 = getRandomColor();
+      const c2 = getRandomColor();
+      document.body.style.background = `linear-gradient(to right, ${c1}, ${c2})`;
+    }
+
+    // RANDOM QUOTE
+    const quotes = [
+      "“Push yourself, because no one else is going to do it for you.”",
+      "“Success is the sum of small efforts repeated daily.”",
+      "“You don’t have to be great to start, but you have to start to be great.”",
+      "“Do something today that your future self will thank you for.”",
+      "“Stay positive, work hard, and make it happen.”"
+    ];
+
+    function showRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote-text").textContent = quotes[randomIndex];
+    }
+
+    // When page loads
+    window.onload = function() {
+      setRandomGradient();
+      showRandomQuote();
+    };
+  </script>
+</body>
+</html>
