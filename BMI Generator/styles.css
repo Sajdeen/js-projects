@@ -10,10 +10,11 @@ body {
     color: #333;
 }
 .container {
-    height: 1020px; ;
+    height: 100vh;
     width: 80%;
     margin: auto;
     overflow: hidden;
+    border: 2px;
 }
 h1 {
     text-align: center;
@@ -25,12 +26,85 @@ h1 {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border: 2px solid #161111;
     margin: 20px auto;
-    text-align: center;
-    justify-content: center;
+    width: fit-content;
 }
-p{
-    margin: 15px 0;
 
+label {
+    display:block;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 25px;
+    user-select: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+input{
+height: 30px;
+width: 100%;
+border-radius: 10px;
+border: 2px solid #161111;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    user-select: none;
+   
+}   
+button:hover {
+    background: #4cae4c;
+    transform: scale(1.1);
+    transition: all 3s ease;
+
+}
+
+#results {
+    margin-top: 15px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+#weight-guide {
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    user-select: none;
+}
+
+.p1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 5px 0;
+}
+
+.p2 {
+  font-size: 17px;
+  color: #e67e22; /* Orange for underweight */
+  font-weight: bold;
+}
+
+.p3 {
+  font-size: 17px;
+  color: #c0392b; /* Red for overweight */
+  font-weight: bold;
 }
